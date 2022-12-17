@@ -1,0 +1,9 @@
+{
+	"name": "spg-dev2",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a4f7e35f-1653-468a-af2f-5d9fb61b2f5c",
+		"tenantId": "4759f71a-9975-42cb-a163-9c636474310a"
+	}
+}
