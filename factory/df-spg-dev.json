@@ -1,0 +1,9 @@
+{
+	"name": "df-spg-dev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a3a0fd01-a736-42c2-abbb-fd71cb923d1c",
+		"tenantId": "145b0abf-c7ef-456b-bc5f-87cdac61f23d"
+	}
+}
