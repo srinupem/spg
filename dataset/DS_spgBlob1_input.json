@@ -1,0 +1,21 @@
+{
+	"name": "DS_spgBlob1_input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_spgBlob1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
