@@ -1,0 +1,16 @@
+{
+	"name": "DS_spgDevDB_customerTbl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_spgserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer"
+		}
+	}
+}
