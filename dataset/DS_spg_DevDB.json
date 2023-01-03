@@ -1,0 +1,16 @@
+{
+	"name": "DS_spg_DevDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_spgserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "bid",
+			"table": "personalemail"
+		}
+	}
+}

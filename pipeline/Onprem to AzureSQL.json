@@ -1,5 +1,5 @@
 {
-	"name": "BlobToBlob",
+	"name": "Onprem to AzureSQL",
 	"properties": {
 		"activities": [
 			{
@@ -16,15 +16,9 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
 					},
 					"sink": {
 						"type": "DelimitedTextSink",
@@ -34,7 +28,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".xlx"
+							"fileExtension": ".xls"
 						}
 					},
 					"enableStaging": false,
@@ -49,7 +43,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_spgBlob1_input",
+						"referenceName": "DS_OnpremSQL_SrinuDB",
 						"type": "DatasetReference"
 					}
 				],
