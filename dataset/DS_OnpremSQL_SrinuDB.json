@@ -1,0 +1,16 @@
+{
+	"name": "DS_OnpremSQL_SrinuDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_onprem_SrinuDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emp1"
+		}
+	}
+}
