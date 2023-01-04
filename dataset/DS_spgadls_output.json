@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "salesorders.xlsx",
 				"fileSystem": "output2"
 			},
 			"columnDelimiter": ",",

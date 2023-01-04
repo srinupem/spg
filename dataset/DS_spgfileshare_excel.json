@@ -1,0 +1,19 @@
+{
+	"name": "DS_spgfileshare_excel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_spgBlob1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "activities list.xlsx",
+				"container": "input"
+			}
+		},
+		"schema": []
+	}
+}
