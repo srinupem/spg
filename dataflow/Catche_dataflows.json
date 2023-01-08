@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "Catche_dataflows",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
@@ -54,7 +54,7 @@
 				"source2 keyGenerate(output(empid as long),",
 				"     startAt: 1L,",
 				"     stepValue: 1L) ~> surrogateKey1",
-				"surrogateKey1 derive(empid = empid+sink1#outputs()[1].maxid) ~> derivedColumn1",
+				"surrogateKey1 derive(empid = empid + sink1#outputs()[1].maxid) ~> derivedColumn1",
 				"source1 sink(validateSchema: false,",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
@@ -75,9 +75,10 @@
 				"     updateable:false,",
 				"     upsertable:false,",
 				"     format: 'table',",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> sink2"
+				"     errorHandlingOption: 'stopOnFirstError',",
+				"     mapColumn(",
+				"          emp_ID = empid",
+				"     )) ~> sink2"
 			]
 		}
 	}
