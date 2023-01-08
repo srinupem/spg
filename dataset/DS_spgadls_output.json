@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "salesorders.xlsx",
+				"fileName": "emp1.csv",
 				"fileSystem": "output2"
 			},
 			"columnDelimiter": ",",

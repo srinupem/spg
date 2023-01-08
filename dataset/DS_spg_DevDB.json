@@ -9,8 +9,8 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "bid",
-			"table": "personalemail"
+			"schema": "dbo",
+			"table": "employee"
 		}
 	}
 }
