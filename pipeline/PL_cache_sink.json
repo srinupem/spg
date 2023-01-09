@@ -1,6 +1,7 @@
 {
-	"name": "pipeline1",
+	"name": "PL_cache_sink",
 	"properties": {
+		"description": "catche sink",
 		"activities": [
 			{
 				"name": "Catche_dataflows",
@@ -20,7 +21,7 @@
 						"type": "DataFlowReference"
 					},
 					"compute": {
-						"coreCount": 8,
+						"coreCount": 16,
 						"computeType": "General"
 					},
 					"traceLevel": "Fine"
