@@ -1,0 +1,9 @@
+{
+	"name": "df-spg-dev",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "eastus"
+}
