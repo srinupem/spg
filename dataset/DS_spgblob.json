@@ -1,0 +1,36 @@
+{
+	"name": "DS_spgblob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_spgBlob1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"foldernameDS": {
+				"type": "string"
+			},
+			"Container": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().foldernameDS",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().Container",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
